@@ -1,0 +1,4 @@
+interface:
+  display_name: "人人能写五分钟剧本"
+  short_description: "陪新手从灵感到五分钟短剧，完成角色、开场结尾、大纲、剧本与修订"
+  default_prompt: "使用 $everyone-can-write-5min-scripts，帮我把一个想法写成约五分钟的剧本。"
