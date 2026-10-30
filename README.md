@@ -8,6 +8,7 @@ SoloEnt 面向 Codex 用户的公开技能合集。每个 skill 放在独立文�
 | --- | --- | --- | --- |
 | [SoloEnt 出海选题](skills/soloent-overseas-topic-advisor/) | 想写英文男频网文的新人、准备出海的中文作者、研究海外题材的编辑与策划 | 选择海外男频题材、判断 Webnovel / Royal Road 适配、寻找参考作品、研究中文网文英译表现 | Codex + 已连接并授权的 SoloEnt MCP |
 | [人人能写五分钟剧本](skills/everyone-can-write-5min-scripts/) | 零基础创作者、短视频作者、编剧及短片制作团队 | 从灵感写成五分钟剧本、改稿、检查节奏和冲突、定稿转分镜 | Codex，无额外 MCP 依赖 |
+| [SoloEnt 中文男频选题](skills/soloent-cn-topic-advisor/) | 中文男频新人、准备开新书或转题材的作者、编辑策划 | 起点或番茄选题、站点适配、小众方向及参考作品筛选 | Codex + SoloEnt MCP |
 
 ## 下载与安装
 
@@ -95,6 +96,24 @@ SoloEnt 面向 Codex 用户的公开技能合集。每个 skill 放在独立文�
 
 真人、AI 真人、动画及横竖屏均可按需要选择。时长以对白与动作估算、朗读或试演校准，不用固定字数冒充五分钟。技能提供文字创作与制作规划，不生成视频、不替用户发布。
 
+## SoloEnt 中文男频选题
+
+适合想在起点或番茄写男频网文的新人、准备开新书或转题材的作者，以及研究题材的编辑策划。结合作者经验、擅长题材、更新能力与站点偏好，从标签榜、写作建议和代表作品中找出适合的方向。
+
+### 安装与使用
+
+复制整个 `skills/soloent-cn-topic-advisor/` 到个人或项目技能目录，保留 `agents/`。需要已连接并授权的 SoloEnt MCP，使用 `insight_advisor_cn_sites`、`insight_advisor_cn_tags` 和 `insight_advisor_cn_tag`。
+
+调用 `$soloent-cn-topic-advisor`，例如：
+
+> 用 SoloEnt 中文男频选题帮我选题。我写过都市系统流，每天能写四千字，想比较起点和番茄有哪些适合我的方向。
+
+> 我想在起点写一本小众题材，擅长历史和人物关系，帮我找几个方向和参考作品。
+
+> 看看番茄最近哪些男频标签表现较好，不用先问我的写作经历。
+
+输出首选与备选、作者适配理由、必要的数据依据和参考作品；确定后可整理选题摘要。起点首订和番茄在读分别使用，不直接比大小；投稿规则涉及选择时另核实官方现行说明。技能不保证作品成绩，不自动投稿或发布。
+
 ## 仓库结构
 
 ```text
@@ -102,9 +121,12 @@ skills/
 ├── soloent-overseas-topic-advisor/   # SoloEnt 出海选题
 │   ├── SKILL.md
 │   └── agents/openai.yaml
-└── everyone-can-write-5min-scripts/  # 人人能写五分钟剧本
+├── everyone-can-write-5min-scripts/  # 人人能写五分钟剧本
+│   ├── SKILL.md
+│   ├── references/
+│   └── agents/openai.yaml
+└── soloent-cn-topic-advisor/         # SoloEnt 中文男频选题
     ├── SKILL.md
-    ├── references/                 # 题材、结构、格式与审稿参考
     └── agents/openai.yaml
 ```
 
