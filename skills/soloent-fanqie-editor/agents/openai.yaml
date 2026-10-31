@@ -1,0 +1,9 @@
+interface:
+  display_name: "SoloEnt AI 责编-番茄审稿助手"
+  short_description: "面向番茄男女频，结合对应频道 MCP 数据诊断开篇、大纲与卖点，给出修改报告"
+  default_prompt: "使用 $soloent-fanqie-editor 审阅我的番茄小说稿件，按目标频道查询 MCP 数据并生成诊断报告。"
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "soloent"
+      description: "SoloEnt 番茄男频与女频站点定义、标签介绍及市场参考分"

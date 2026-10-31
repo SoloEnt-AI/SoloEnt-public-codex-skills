@@ -9,6 +9,7 @@ SoloEnt 面向 Codex 用户的公开技能合集。每个 skill 放在独立文�
 | [SoloEnt 出海选题](skills/soloent-overseas-topic-advisor/) | 想写英文男频网文的新人、准备出海的中文作者、研究海外题材的编辑与策划 | 选择海外男频题材、判断 Webnovel / Royal Road 适配、寻找参考作品、研究中文网文英译表现 | Codex + 已连接并授权的 SoloEnt MCP |
 | [人人能写五分钟剧本](skills/everyone-can-write-5min-scripts/) | 零基础创作者、短视频作者、编剧及短片制作团队 | 从灵感写成五分钟剧本、改稿、检查节奏和冲突、定稿转分镜 | Codex，无额外 MCP 依赖 |
 | [SoloEnt 中文男频选题](skills/soloent-cn-topic-advisor/) | 中文男频新人、准备开新书或转题材的作者、编辑策划 | 起点或番茄选题、站点适配、小众方向及参考作品筛选 | Codex + SoloEnt MCP |
+| [SoloEnt AI 责编-番茄审稿助手](skills/soloent-fanqie-editor/) | 番茄男频与女频作者 | 开篇与大纲审稿、频道适配、五维诊断、改稿复审 | Codex + SoloEnt MCP |
 
 ## 下载与安装
 
@@ -114,6 +115,20 @@ SoloEnt 面向 Codex 用户的公开技能合集。每个 skill 放在独立文�
 
 输出首选与备选、作者适配理由、必要的数据依据和参考作品；确定后可整理选题摘要。起点首订和番茄在读分别使用，不直接比大小；投稿规则涉及选择时另核实官方现行说明。技能不保证作品成绩，不自动投稿或发布。
 
+## SoloEnt AI 责编-番茄审稿助手
+
+适合番茄男频、女频作者做开篇诊断、大纲检查、投稿前修订与复审。根据作品实际的成长、关系、情绪或悬疑承诺审阅，不把所有题材都套进同一套打脸或恋爱模板。
+
+### 安装与调用
+
+复制 `skills/soloent-fanqie-editor/` 整个文件夹到个人或项目技能目录，保留 `references/` 和 `agents/`。连接并授权 SoloEnt MCP，基础工具为 `insight_sites` 与 `insight_reference_tags`。男频选 `fanqie`，女频选 `fanqie_f`，不混用数据。
+
+> 用 $soloent-fanqie-editor 审阅我的番茄女频开篇，这是无 CP 的成长文。请查对应频道标签，重点看人物主体性、节奏和卖点兑现，并保存诊断报告。
+
+> 帮我审这份番茄男频大纲和前三章，指出最值得先改的三个问题，不必重写正文。
+
+按需生成 `[书名]_番茄诊断报告.md`；不足三章也可做局部诊断。市场参考分不等于质量分或成功概率。女频基础参考数据已可通过 MCP 获取；未提供的详细成绩和代表作品不以男频样本补齐。可按要求提供明确标注的 AI 模拟读者体验，不冒充真实试读。
+
 ## 仓库结构
 
 ```text
@@ -125,8 +140,12 @@ skills/
 │   ├── SKILL.md
 │   ├── references/
 │   └── agents/openai.yaml
-└── soloent-cn-topic-advisor/         # SoloEnt 中文男频选题
+├── soloent-cn-topic-advisor/         # SoloEnt 中文男频选题
+│   ├── SKILL.md
+│   └── agents/openai.yaml
+└── soloent-fanqie-editor/            # SoloEnt AI 责编-番茄审稿助手
     ├── SKILL.md
+    ├── references/
     └── agents/openai.yaml
 ```
 
